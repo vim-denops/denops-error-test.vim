@@ -1,7 +1,7 @@
-# denops-unhandled-promise.vim
+# denops-error-test
 
-A repository to reproduce `[denops] error: Uncaught (in promise) Error: Unhandled error in child worker.`
+A repository to invoke error on denops function.
 
 ## Usage
 
-Invoke `InvokeUnhandledPromise` command.
+Call `InvokeError` or `InvokeUnhandledPromise` command.
