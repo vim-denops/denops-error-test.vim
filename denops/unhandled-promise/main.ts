@@ -9,5 +9,8 @@ export function main(denops: Denops) {
         throw 42;
       })();
     },
+    test2() {
+      throw 42;
+    },
   };
 }
