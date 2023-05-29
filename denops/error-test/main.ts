@@ -5,6 +5,9 @@ export function main(denops: Denops) {
     error() {
       throw new Error("This is error from denops-error-test.vim");
     },
+    nested() {
+      nestLevel1();
+    },
     // deno-lint-ignore require-await
     async unhandledPromise() {
       // deno-lint-ignore require-await
@@ -13,4 +16,16 @@ export function main(denops: Denops) {
       })();
     },
   };
+}
+
+function nestLevel1(): void {
+  nestLevel2();
+}
+
+function nestLevel2(): void {
+  nestLevel3();
+}
+
+function nestLevel3(): void {
+  throw new Error("This is error from denops-error-test.vim");
 }

@@ -4,4 +4,4 @@ A repository to invoke error on denops function.
 
 ## Usage
 
-Call `InvokeError` or `InvokeUnhandledPromise` command.
+Call `InvokeError`, `InvokeNestedError`, or `InvokeUnhandledPromise` command.
